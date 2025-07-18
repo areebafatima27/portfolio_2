@@ -171,7 +171,7 @@ export default function Portfolio() {
             <h1 className="hero-title">
               <span className="gradient-text">Computer Science</span>
               <br />
-              <span className="hero-subtitle">Student</span>
+              <span className="hero-subtitle">Graduate</span>
             </h1>
             <p className="hero-description">
               Passionate about web development and AI/ML with hands-on
