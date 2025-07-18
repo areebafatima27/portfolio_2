@@ -335,7 +335,7 @@ export default function Portfolio() {
           <div className="section-header">
             <h2 className="section-title">Get In Touch</h2>
             <p className="section-description">
-              Let's discuss opportunities and collaborate on exciting projects
+              Let&#39;s discuss opportunities and collaborate on exciting projects
             </p>
           </div>
 
@@ -432,8 +432,8 @@ export default function Portfolio() {
               <div className="opportunity-card">
                 <h3 className="opportunity-title">Open to Opportunities</h3>
                 <p className="opportunity-text">
-                  I'm currently looking for internship opportunities and
-                  exciting projects to work on. Let's build something amazing
+                  I am currently looking for internship opportunities and
+                  exciting projects to work on. Let&#39;s build something amazing
                   together!
                 </p>
               </div>
