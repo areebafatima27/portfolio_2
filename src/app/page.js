@@ -10,6 +10,7 @@ import {
   ExternalLink,
   Menu,
   X,
+  Play,
 } from "lucide-react";
 import "./styles.css";
 
@@ -65,9 +66,10 @@ export default function Portfolio() {
       tech: ["Next.js", "Firebase", "Prisma", "Material UI", "Tailwind CSS"],
       github: "https://github.com/areebafatima27/virtual-mall",
       demo: "#",
+      video: "/videos/virtual-mall-lahore.mp4", // Added video demo
     },
     {
-      title: "Meeting Minutes Generator",
+      title: "Audio processor",
       description:
         "An AI-powered tool that transcribes and summarizes multilingual meeting audio using Whisper and NLP.",
       features: [
@@ -79,6 +81,29 @@ export default function Portfolio() {
       tech: ["Python", "Whisper", "Gemini API", "React", "Flask"],
       github: "https://github.com/areebafatima27/auth-app",
       demo: "#",
+      video: "/videos/emo.mp4", // Added video demo
+    },
+    {
+      title: "Digital Calendar Website",
+      description:
+        "A modern, interactive calendar application with event management, scheduling, and notification features built with React and Node.js.",
+      features: [
+        "Interactive calendar interface with month/week/day views",
+        "Event creation and management system",
+        "Responsive design for all devices",
+      ],
+      tech: [
+        "React",
+        "Node.js",
+        "Express",
+        "MongoDB",
+        "Google Calendar API",
+        "Socket.io",
+        "Tailwind CSS",
+      ],
+      github: "https://github.com/areebafatima27/digital-calendar",
+      demo: "https://digital-calendar-demo.vercel.app",
+      video: "/videos/calendar.mp4", // Added video demo
     },
   ];
 
@@ -217,6 +242,18 @@ export default function Portfolio() {
           <div className="projects-grid">
             {projects.map((project, index) => (
               <div key={index} className="project-card">
+                {project.video && (
+                  <div className="project-video">
+                    <video controls className="demo-video">
+                      <source src={project.video} type="video/mp4" />
+                      Your browser does not support the video tag.
+                    </video>
+                    <div className="video-overlay">
+                      <Play size={48} className="play-icon" />
+                    </div>
+                  </div>
+                )}
+
                 <div className="card-header">
                   <h3 className="card-title">{project.title}</h3>
                   <p className="card-description">{project.description}</p>
@@ -335,7 +372,8 @@ export default function Portfolio() {
           <div className="section-header">
             <h2 className="section-title">Get In Touch</h2>
             <p className="section-description">
-              Let&#39;s discuss opportunities and collaborate on exciting projects
+              Let&#39;s discuss opportunities and collaborate on exciting
+              projects
             </p>
           </div>
 
@@ -433,8 +471,8 @@ export default function Portfolio() {
                 <h3 className="opportunity-title">Open to Opportunities</h3>
                 <p className="opportunity-text">
                   I am currently looking for internship opportunities and
-                  exciting projects to work on. Let&#39;s build something amazing
-                  together!
+                  exciting projects to work on. Let&#39;s build something
+                  amazing together!
                 </p>
               </div>
             </div>
